@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: black;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 5px;
+  padding: 0;
+}
