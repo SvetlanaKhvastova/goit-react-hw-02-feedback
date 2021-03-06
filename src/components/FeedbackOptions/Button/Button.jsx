@@ -5,7 +5,12 @@ import s from './Button.module.css';
 const Button = ({ name, onLeaveFeedback }) => {
   return (
     <>
-      <button type="button" className={s.button} onClick={onLeaveFeedback}>
+      <button
+        type="button"
+        name={name}
+        className={s.button}
+        onClick={onLeaveFeedback}
+      >
         {name}
       </button>
     </>

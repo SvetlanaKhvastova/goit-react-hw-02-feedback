@@ -12,11 +12,9 @@ class App extends Component {
     bad: 0,
   };
 
-  onLeaveFeedback = key => {
-    this.setState(prevFeedback => ({
-      ...prevFeedback,
-      ...{ [key.target.textContent]: prevFeedback[key.target.textContent] + 1 },
-    }));
+  onLeaveFeedback = ev => {
+    const { name } = ev.target;
+    this.setState({ [name]: this.state[name] + 1 });
   };
 
   countTotalFeedback = () => {
